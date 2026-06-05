@@ -10,7 +10,7 @@ export function ProgressPage() {
         <div className="page-header__subtitle">Data Display</div>
         <h1 className="page-header__title">Progress</h1>
         <p className="page-header__description">
-          Progress bar with 3 sizes, 4 color variants, and optional label.
+          Progress bar with 3 sizes and 4 color variants.
         </p>
       </div>
 
@@ -31,18 +31,18 @@ export function ProgressPage() {
       <h2>Sizes</h2>
       <ComponentPreview title="Size variants" direction="column" align="left">
         <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: 16 }}>
-          <Progress value={45} size="sm" label="Small" />
-          <Progress value={65} size="md" label="Medium" />
-          <Progress value={85} size="lg" label="Large" />
+          <Progress value={45} size="sm" />
+          <Progress value={65} size="md" />
+          <Progress value={85} size="lg" />
         </div>
       </ComponentPreview>
 
       <h2>Props</h2>
       <PropsTable props={[
         { name: 'value', type: 'number', description: 'Progress value (0-100)', required: true },
+        { name: 'max', type: 'number', default: '100', description: 'Maximum value' },
         { name: 'variant', type: "'default' | 'success' | 'warning' | 'error'", default: "'default'", description: 'Color variant' },
         { name: 'size', type: "'sm' | 'md' | 'lg'", default: "'md'", description: 'Bar height' },
-        { name: 'label', type: 'string', description: 'Optional label text' },
       ]} />
     </div>
   )

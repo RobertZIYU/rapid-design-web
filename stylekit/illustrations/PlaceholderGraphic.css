@@ -1,0 +1,11 @@
+/* Scoped sizing for the embedded SVG so it scales to the container. */
+.placeholder-graphic {
+  display: block;
+  line-height: 0;
+}
+
+.placeholder-graphic > svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}

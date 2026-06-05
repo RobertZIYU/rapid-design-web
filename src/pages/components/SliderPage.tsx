@@ -5,8 +5,8 @@ import { CodeBlock } from '../../components/docs/CodeBlock'
 import { PropsTable } from '../../components/docs/PropsTable'
 
 export function SliderPage() {
-  const [value, setValue] = useState(50)
-  const [range, setRange] = useState([20, 80])
+  const [value, setValue] = useState<number | number[]>(50)
+  const [range, setRange] = useState<number | number[]>([20, 80])
 
   return (
     <div>
@@ -36,8 +36,8 @@ export function SliderPage() {
 
       <h2>Props</h2>
       <PropsTable props={[
-        { name: 'value', type: 'number | number[]', description: 'Current value(s)', required: true },
-        { name: 'onChange', type: '(value) => void', description: 'Value change handler', required: true },
+        { name: 'value', type: 'number | number[]', description: 'Current value(s)' },
+        { name: 'onChange', type: '(value: number | number[]) => void', description: 'Value change handler' },
         { name: 'min', type: 'number', default: '0', description: 'Minimum value' },
         { name: 'max', type: 'number', default: '100', description: 'Maximum value' },
         { name: 'step', type: 'number', default: '1', description: 'Step increment' },

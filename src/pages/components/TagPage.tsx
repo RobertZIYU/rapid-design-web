@@ -16,42 +16,41 @@ export function TagPage() {
 
       <h2>Variants</h2>
       <ComponentPreview title="All color variants">
-        <Tag variant="default">Default</Tag>
         <Tag variant="primary">Primary</Tag>
         <Tag variant="success">Success</Tag>
         <Tag variant="warning">Warning</Tag>
         <Tag variant="error">Error</Tag>
-        <Tag variant="info">Info</Tag>
         <Tag variant="neutral">Neutral</Tag>
+        <Tag variant="purple">Purple</Tag>
+        <Tag variant="teal">Teal</Tag>
       </ComponentPreview>
-      <CodeBlock code={`<Tag variant="default">Default</Tag>
-<Tag variant="primary">Primary</Tag>
+      <CodeBlock code={`<Tag variant="primary">Primary</Tag>
 <Tag variant="success">Success</Tag>
 <Tag variant="warning">Warning</Tag>
 <Tag variant="error">Error</Tag>
-<Tag variant="info">Info</Tag>
-<Tag variant="neutral">Neutral</Tag>`} />
+<Tag variant="neutral">Neutral</Tag>
+<Tag variant="purple">Purple</Tag>
+<Tag variant="teal">Teal</Tag>`} />
 
       <h2>Sizes</h2>
       <ComponentPreview title="Size variants">
-        <Tag variant="primary" size="sm">Small</Tag>
-        <Tag variant="primary" size="md">Medium</Tag>
-        <Tag variant="primary" size="lg">Large</Tag>
+        <Tag variant="primary" size="mini">Mini</Tag>
+        <Tag variant="primary" size="default">Default</Tag>
       </ComponentPreview>
 
       <h2>Closeable</h2>
       <ComponentPreview title="With close button">
-        <Tag variant="success" closeable onClose={() => {}}>Closeable</Tag>
-        <Tag variant="error" closeable onClose={() => {}}>Remove</Tag>
+        <Tag variant="success" onClose={() => {}}>Closeable</Tag>
+        <Tag variant="error" onClose={() => {}}>Remove</Tag>
       </ComponentPreview>
 
       <h2>Props</h2>
       <PropsTable props={[
-        { name: 'variant', type: "'default' | 'primary' | 'success' | 'warning' | 'error' | 'info' | 'neutral'", default: "'default'", description: 'Color variant' },
-        { name: 'size', type: "'sm' | 'md' | 'lg'", default: "'md'", description: 'Tag size' },
-        { name: 'closeable', type: 'boolean', default: 'false', description: 'Show close button' },
-        { name: 'onClose', type: '() => void', description: 'Close handler' },
+        { name: 'variant', type: "'success' | 'warning' | 'error' | 'neutral' | 'primary' | 'purple' | 'teal'", default: "'neutral'", description: 'Color variant' },
+        { name: 'size', type: "'default' | 'mini'", default: "'default'", description: 'Tag size' },
+        { name: 'onClose', type: '() => void', description: 'Close handler (shows close button when provided)' },
         { name: 'icon', type: 'ReactNode', description: 'Icon before the label' },
+        { name: 'children', type: 'string', description: 'Tag text', required: true },
       ]} />
     </div>
   )

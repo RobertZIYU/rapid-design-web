@@ -1,0 +1,64 @@
+/* Progress - Progress bar component */
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  font-family: var(--font-primary);
+}
+
+.progress__track {
+  flex: 1;
+  background-color: var(--neutral-2);
+  border-radius: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress__bar {
+  height: 100%;
+  background-color: var(--primary-6);
+  border-radius: 100px;
+  transition: width 0.3s ease;
+}
+
+/* Sizes */
+.progress--sm .progress__track {
+  height: 4px;
+}
+
+.progress--md .progress__track {
+  height: 8px;
+}
+
+.progress--lg .progress__track {
+  height: 12px;
+}
+
+/* Variants */
+.progress__bar--default {
+  background-color: var(--primary-6);
+}
+
+.progress__bar--success {
+  background-color: var(--success-6);
+}
+
+.progress__bar--warning {
+  background-color: var(--warning-6);
+}
+
+.progress__bar--error {
+  background-color: var(--error-6);
+}
+
+/* Label */
+.progress__label {
+  flex-shrink: 0;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-default);
+  min-width: 40px;
+  text-align: right;
+}

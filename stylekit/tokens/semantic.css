@@ -1,0 +1,113 @@
+:root {
+  /* ===== Surface ===== */
+  --surface-default: var(--neutral-0); /* #fcfcfd */
+  --surface-canvas: var(--neutral-1); /* #f7f7f8 */
+  --surface-button-primary: var(--neutral-11); /* #181c21 */
+  --surface-button-hover: var(--neutral-9); /* #3d4652 */
+  --surface-disabled: var(--neutral-1); /* #f7f7f8 */
+  --surface-secondary: var(--neutral-1); /* #f7f7f8 */
+  --surface-bg-hover: var(--neutral-1); /* #f7f7f8 */
+  --surface-warning: var(--warning-0); /* #fffcf6 */
+  --surface-error: var(--error-0); /* #fef6f6 */
+  --surface-checkbox: var(--neutral-11); /* #181c21 */
+  --surface-radio: var(--neutral-11); /* #181c21 */
+  --surface-radio-disabled: var(--neutral-5); /* #b6bcc3 */
+  --surface-tab-selected: var(--neutral-1); /* #f7f7f8 */
+  --surface-tag-success: var(--success-1); /* #e7f7f1 */
+  --surface-tag-warning: var(--warning-3); /* #fee5b7 */
+  --surface-tag-error: var(--error-1); /* #fdecec */
+  --surface-tag-neutral: var(--neutral-1); /* #f7f7f8 */
+  --surface-tag-primary: var(--primary-0); /* #f2f5fe */
+  --surface-primary: var(--primary-1); /* #e6ebfc */
+  --surface-tag-purple: var(--neutral-0); /* #fcfcfd */
+  --surface-tag-teal: var(--neutral-0); /* #fcfcfd */
+  --surface-toggle-off: var(--neutral-2); /* #eeeff1 */
+  --surface-toggle-disabled: var(--neutral-5); /* #b6bcc3 */
+  --surface-toggle-on: var(--neutral-11); /* #181c21 */
+  --surface-message-info: var(--primary-0); /* #f2f5fe */
+  --surface-message-success: var(--success-1); /* #e7f7f1 */
+  --surface-message-warning: var(--warning-2); /* #fef2db */
+  --surface-message-error: var(--error-1); /* #fdecec */
+
+  /* ===== Border ===== */
+  --border-default: var(--neutral-2); /* #eeeff1 */
+  --border-inverse: var(--neutral-0); /* #fcfcfd */
+  --border-disabled: var(--neutral-3); /* #e6e8ea */
+  --border-error: var(--error-5); /* #f26969 */
+  --border-warning: var(--warning-6); /* #fcbf4c */
+  --border-strong: var(--neutral-4); /* #d2d6da */
+  --border-primary: var(--primary-2); /* #cdd7f9 */
+  --border-focus: var(--primary-4); /* #6888ee */
+  --border-radio-checked: var(--neutral-11); /* #181c21 */
+  --border-radio-checked-disabled: var(--neutral-4); /* #d2d6da */
+  --border-radio-unchecked: var(--neutral-3); /* #e6e8ea */
+  --border-tab-selected: var(--neutral-11); /* #181c21 */
+
+  /* ===== Text ===== */
+  --text-default: var(--neutral-11); /* #181c21 */
+  --text-secondary: var(--neutral-7); /* #77818d */
+  --text-table-header: var(--neutral-7); /* #77818d */
+  --text-card-title: var(--neutral-7); /* #77818d */
+  --text-trend-label: var(--neutral-6); /* #97a0aa */
+  --text-trend-positive: var(--success-6); /* #11b076 */
+  --text-trend-negative: var(--error-6); /* #ef4444 */
+  --text-inverse: var(--neutral-0); /* #fcfcfd */
+  --text-placeholder: var(--neutral-5); /* #b6bcc3 */
+  --text-subtext: var(--neutral-6); /* #97a0aa */
+  --text-disabled: var(--neutral-5); /* #b6bcc3 */
+  --text-text-link: var(--primary-6); /* #0439e2 */
+  --text-primary: var(--primary-6); /* #0439e2 */
+  --text-success: var(--success-6); /* #11b076 */
+  --text-tag-success: var(--success-8); /* #0a6a47 */
+  --text-tag-warning: var(--warning-9); /* #654c1e */
+  --text-error: var(--error-7); /* #bf3636 */
+  --text-tag-text: var(--neutral-9); /* #3d4652 */
+  --text-tag-primary: var(--primary-7); /* #032eb5 */
+  --text-tag-purple: var(--amethyst-8); /* #645396 */
+  --text-tag-teal: var(--morganite-7); /* #bc667c */
+
+  /* ===== Icon ===== */
+  --icon-default: var(--neutral-11); /* #181c21 */
+  --icon-secondary: var(--neutral-7); /* #77818d */
+  --icon-primary: var(--primary-6); /* #0439e2 */
+  --icon-inverse: var(--neutral-0); /* #fcfcfd */
+  --icon-warning: var(--warning-7); /* #ca993d */
+  --icon-error: var(--error-7); /* #bf3636 */
+  --icon-tag-success: var(--success-8); /* #0a6a47 */
+  --icon-tag-warning: var(--warning-9); /* #654c1e */
+  --icon-tag: var(--neutral-9); /* #3d4652 */
+  --icon-tag-primary: var(--primary-7); /* #032eb5 */
+  --icon-tag-purple: var(--amethyst-8); /* #645396 */
+  --icon-tag-teal: var(--morganite-7); /* #bc667c */
+
+  /* ===== Data Visualization ===== */
+  --dataviz-1: var(--sapphire-6); /* #5b8def */
+  --dataviz-2: var(--aquamarine-6); /* #7dd3fc */
+  --dataviz-3: var(--emerald-6); /* #8dd3c7 */
+  --dataviz-4: var(--amethyst-6); /* #a78bfa */
+  --dataviz-5: var(--morganite-6); /* #eb7f9b */
+  --dataviz-6: var(--sunstone-6); /* #f59e8b */
+  --dataviz-7: var(--amber-6); /* #f4a96c */
+
+  /* ===== Extended Surfaces (Common in Figma designs) ===== */
+  --surface-page-bg: #f9fbff; /* Light blue tint for app backgrounds */
+  --surface-content-area: #f7f8fb; /* Slightly darker than page bg, for nested content areas */
+  --surface-preview-warm: #ece8dc; /* Warm beige for preview cards, image backgrounds */
+
+  /* ===== Extended Text Colors ===== */
+  --text-tertiary: rgba(0, 0, 0, 0.6); /* Lighter than secondary, for de-emphasized text */
+  --text-quaternary: rgba(0, 0, 0, 0.4); /* Very light text, rarely used */
+
+  /* ===== Subtle Backgrounds ===== */
+  --bg-subtle: rgba(0, 0, 0, 0.05); /* Very light gray for hover states, subtle backgrounds */
+  --bg-subtle-hover: rgba(0, 0, 0, 0.08); /* Slightly darker on hover */
+
+  /* ===== Extended Borders ===== */
+  --border-light: #eaeaea; /* Lighter than default, for subtle separators */
+  --border-divider: rgba(0, 0, 0, 0.1); /* For vertical/horizontal dividers */
+
+  /* ===== Gradients ===== */
+  --gradient-primary: linear-gradient(to bottom, #4e8ecc, #487ec2); /* For message bubbles */
+  --gradient-success: linear-gradient(to bottom, #41c091, #0e8d5e); /* Success gradients */
+  --gradient-warm: linear-gradient(135deg, #d4c5b0, #b8a896); /* Warm backgrounds */
+}

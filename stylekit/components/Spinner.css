@@ -1,0 +1,71 @@
+/* Spinner - Loading indicator */
+
+.spinner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+}
+
+.spinner__svg {
+  animation: spinner-rotate 1s linear infinite;
+}
+
+.spinner__circle {
+  stroke-dasharray: 50 200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  animation: spinner-dash 1.5s ease-in-out infinite;
+  opacity: 0.25;
+}
+
+/* Sizes */
+.spinner--sm .spinner__svg {
+  width: 16px;
+  height: 16px;
+}
+
+.spinner--md .spinner__svg {
+  width: 24px;
+  height: 24px;
+}
+
+.spinner--lg .spinner__svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Hide label visually but keep it for screen readers */
+.spinner__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Animations */
+@keyframes spinner-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-dash {
+  0% {
+    stroke-dasharray: 1 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90 200;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90 200;
+    stroke-dashoffset: -125;
+  }
+}

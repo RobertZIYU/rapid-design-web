@@ -1,0 +1,65 @@
+:root {
+  /*
+   * Font Families
+   * Primary stack includes Japanese fallbacks (Hiragino Sans, YuGothic, Meiryo,
+   * Noto Sans CJK JP) so localized content renders correctly without a
+   * separate font swap. Other-language fallbacks are not yet defined.
+   */
+  --font-primary: "Plus Jakarta Sans", "Hiragino Sans", "YuGothic", Meiryo, "Noto Sans CJK JP", system-ui, sans-serif;
+  --font-mono: "Roboto Mono", ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* Font Weights */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /*
+   * Font Sizes — Tailwind v4 scale (rem-based) + a 2xs extension for tags.
+   * See line-height tokens below for paired leading values.
+   */
+  --text-2xs:  0.625rem;  /* 10px (extension, used for tags/badges)        */
+  --text-xs:   0.75rem;   /* 12px                                          */
+  --text-sm:   0.875rem;  /* 14px (body)                                   */
+  --text-base: 1rem;      /* 16px (h3)                                     */
+  --text-lg:   1.125rem;  /* 18px                                          */
+  --text-xl:   1.25rem;   /* 20px (h2)                                     */
+  --text-2xl:  1.5rem;    /* 24px                                          */
+  --text-3xl:  1.875rem;  /* 30px                                          */
+  --text-4xl:  2.25rem;   /* 36px (h1)                                     */
+  --text-5xl:  3rem;      /* 48px                                          */
+  --text-6xl:  3.75rem;   /* 60px                                          */
+  --text-7xl:  4.5rem;    /* 72px                                          */
+  --text-8xl:  6rem;      /* 96px                                          */
+  --text-9xl:  8rem;      /* 128px                                         */
+
+  /*
+   * Line Heights — paired with each font-size token using Tailwind's
+   * `--text-{size}--line-height` naming. Values are Tailwind defaults
+   * bumped up by 0.25rem for the body/heading sizes; display sizes
+   * (5xl+) stay at unitless 1 for tight headlines.
+   */
+  --text-2xs--line-height:  1rem;     /* 16px */
+  --text-xs--line-height:   1.25rem;  /* 20px */
+  --text-sm--line-height:   1.5rem;   /* 24px */
+  --text-base--line-height: 1.75rem;  /* 28px */
+  --text-lg--line-height:   2rem;     /* 32px */
+  --text-xl--line-height:   2rem;     /* 32px */
+  --text-2xl--line-height:  2.25rem;  /* 36px */
+  --text-3xl--line-height:  2.5rem;   /* 40px */
+  --text-4xl--line-height:  2.75rem;  /* 44px */
+  --text-5xl--line-height:  1;
+  --text-6xl--line-height:  1;
+  --text-7xl--line-height:  1;
+  --text-8xl--line-height:  1;
+  --text-9xl--line-height:  1;
+
+  /* Composite Tokens */
+  --chat-title-size: var(--text-xs);
+  --chat-title-weight: var(--font-weight-semibold);
+  --chat-title-tracking: 1px;
+  --chat-title-transform: uppercase;
+
+  /* Paragraph Spacing */
+  --paragraph-spacing: 12px;
+}

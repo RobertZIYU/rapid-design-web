@@ -1,0 +1,171 @@
+:root {
+  /* Neutral */
+  --neutral-0: hsl(240 20% 99%);
+  --neutral-1: hsl(240 6% 97%);
+  --neutral-2: hsl(220 10% 94%);
+  --neutral-3: hsl(210 9% 91%);
+  --neutral-4: hsl(210 10% 84%);
+  --neutral-5: hsl(212 10% 74%);
+  --neutral-6: hsl(213 10% 63%);
+  --neutral-7: hsl(214 9% 51%);
+  --neutral-8: hsl(215 13% 39%);
+  --neutral-9: hsl(215 15% 28%);
+  --neutral-10: hsl(213 21% 18%);
+  --neutral-11: hsl(213 16% 11%);
+
+  /* Primary */
+  --primary-0: #f2f5fe;
+  --primary-1: #e6ebfc;
+  --primary-2: #cdd7f9;
+  --primary-3: #9bb0f3;
+  --primary-4: #6888ee;
+  --primary-5: #3661e8;
+  --primary-6: #0439e2;
+  --primary-7: #032eb5;
+  --primary-8: #022288;
+  --primary-9: #02175a;
+  --primary-10: #010b2d;
+  --primary-11: #000617;
+
+  /* Success */
+  --success-0: #f3fbf8;
+  --success-1: #e7f7f1;
+  --success-2: #cfefe4;
+  --success-3: #a0dfc8;
+  --success-4: #70d0ad;
+  --success-5: #41c091;
+  --success-6: #11b076;
+  --success-7: #0e8d5e;
+  --success-8: #0a6a47;
+  --success-9: #07462f;
+  --success-10: #032318;
+  --success-11: #02120c;
+
+  /* Warning */
+  --warning-0: #fffcf6;
+  --warning-1: #fff9ed;
+  --warning-2: #fef2db;
+  --warning-3: #fee5b7;
+  --warning-4: #fdd994;
+  --warning-5: #fdcc70;
+  --warning-6: #fcbf4c;
+  --warning-7: #ca993d;
+  --warning-8: #97732e;
+  --warning-9: #654c1e;
+  --warning-10: #32260f;
+  --warning-11: #191308;
+
+  /* Error */
+  --error-0: #fef6f6;
+  --error-1: #fdecec;
+  --error-2: #fcdada;
+  --error-3: #f9b4b4;
+  --error-4: #f58f8f;
+  --error-5: #f26969;
+  --error-6: #ef4444;
+  --error-7: #bf3636;
+  --error-8: #8f2929;
+  --error-9: #601b1b;
+  --error-10: #300e0e;
+  --error-11: #180707;
+
+  /* ===== Data Visualization Colors ===== */
+
+  /* Sapphire */
+  --sapphire-0: #f7f9fe;
+  --sapphire-1: #eff4fd;
+  --sapphire-2: #dee8fc;
+  --sapphire-3: #bdd1f9;
+  --sapphire-4: #9dbbf5;
+  --sapphire-5: #7ca4f2;
+  --sapphire-6: #5b8def;
+  --sapphire-7: #4971bf;
+  --sapphire-8: #37558f;
+  --sapphire-9: #243860;
+  --sapphire-10: #121c30;
+  --sapphire-11: #090e18;
+
+  /* Aquamarine */
+  --aquamarine-0: #f9fdff;
+  --aquamarine-1: #f2fbff;
+  --aquamarine-2: #e5f6fe;
+  --aquamarine-3: #cbedfe;
+  --aquamarine-4: #b1e5fd;
+  --aquamarine-5: #97dcfd;
+  --aquamarine-6: #7dd3fc;
+  --aquamarine-7: #64a9ca;
+  --aquamarine-8: #4b7f97;
+  --aquamarine-9: #325465;
+  --aquamarine-10: #192a32;
+  --aquamarine-11: #0c1519;
+
+  /* Emerald */
+  --emerald-0: #f9fdfc;
+  --emerald-1: #f4fbf9;
+  --emerald-2: #e8f6f4;
+  --emerald-3: #d1ede9;
+  --emerald-4: #bbe5dd;
+  --emerald-5: #a4dcd2;
+  --emerald-6: #8dd3c7;
+  --emerald-7: #71a99f;
+  --emerald-8: #557f77;
+  --emerald-9: #385450;
+  --emerald-10: #1c2a28;
+  --emerald-11: #0e1514;
+
+  /* Amethyst */
+  --amethyst-0: #fbf9ff;
+  --amethyst-1: #f6f3ff;
+  --amethyst-2: #ede8fe;
+  --amethyst-3: #dcd1fd;
+  --amethyst-4: #cab9fc;
+  --amethyst-5: #b9a2fb;
+  --amethyst-6: #a78bfa;
+  --amethyst-7: #866fc8;
+  --amethyst-8: #645396;
+  --amethyst-9: #433864;
+  --amethyst-10: #211c32;
+  --amethyst-11: #110e19;
+
+  /* Morganite */
+  --morganite-0: #fef9fa;
+  --morganite-1: #fdf2f5;
+  --morganite-2: #fbe5eb;
+  --morganite-3: #f7ccd7;
+  --morganite-4: #f3b2c3;
+  --morganite-5: #ef99af;
+  --morganite-6: #eb7f9b;
+  --morganite-7: #bc667c;
+  --morganite-8: #8d4c5d;
+  --morganite-9: #5e333e;
+  --morganite-10: #2f191f;
+  --morganite-11: #170d0f;
+
+  /* Sunstone */
+  --sunstone-0: #fffaf9;
+  --sunstone-1: #fef5f3;
+  --sunstone-2: #fdece8;
+  --sunstone-3: #fbd8d1;
+  --sunstone-4: #f9c5b9;
+  --sunstone-5: #f7b1a2;
+  --sunstone-6: #f59e8b;
+  --sunstone-7: #c47e6f;
+  --sunstone-8: #935f53;
+  --sunstone-9: #623f38;
+  --sunstone-10: #31201c;
+  --sunstone-11: #18100e;
+
+  /* Amber */
+  --amber-0: #fefbf8;
+  --amber-1: #fef6f0;
+  --amber-2: #fdeee2;
+  --amber-3: #fbddc4;
+  --amber-4: #f8cba7;
+  --amber-5: #f6ba89;
+  --amber-6: #f4a96c;
+  --amber-7: #c38756;
+  --amber-8: #926541;
+  --amber-9: #62442b;
+  --amber-10: #312216;
+  --amber-11: #18110b;
+}

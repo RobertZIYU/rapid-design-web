@@ -5,7 +5,7 @@ import { navigation, type NavSection } from '../data/navigation'
 function SidebarSection({ section }: { section: NavSection }) {
   const location = useLocation()
   const isActive = section.items?.some(item => item.path === location.pathname)
-  const [isOpen, setIsOpen] = useState(isActive || true)
+  const [isOpen, setIsOpen] = useState<boolean>(true)
 
   return (
     <div className="sidebar-section">

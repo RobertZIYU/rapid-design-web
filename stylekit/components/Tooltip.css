@@ -1,0 +1,121 @@
+/* ===== Tooltip Wrapper ===== */
+.tooltip {
+  position: relative;
+  display: inline-flex;
+}
+
+/* ===== Popup Container (portaled to body) ===== */
+.tooltip__popup {
+  position: absolute;
+  z-index: 9999;
+  max-width: 280px;
+  width: max-content;
+  pointer-events: none;
+  animation: tooltip-fade-in 0.15s ease;
+}
+
+@keyframes tooltip-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ===== Tooltip Body ===== */
+.tooltip__body {
+  background-color: var(--surface-default);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: var(--elevation-tooltip, 0px 4px 8px 0px rgba(135, 143, 158, 0.12),
+    0px 8px 12px 0px rgba(135, 143, 158, 0.08));
+  font-family: var(--font-primary, 'Plus Jakarta Sans', sans-serif);
+}
+
+/* ===== Arrow ===== */
+.tooltip__arrow {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--surface-default);
+  border: 1px solid var(--border-default);
+  transform: rotate(45deg);
+}
+
+/* Arrow: Top (tooltip above trigger, arrow points down) */
+.tooltip__popup--top .tooltip__arrow {
+  bottom: -5px;
+  left: 50%;
+  margin-left: -5px;
+  border-top: none;
+  border-left: none;
+}
+
+/* Arrow: Bottom (tooltip below trigger, arrow points up) */
+.tooltip__popup--bottom .tooltip__arrow {
+  top: -5px;
+  left: 50%;
+  margin-left: -5px;
+  border-bottom: none;
+  border-right: none;
+}
+
+/* Arrow: Left (tooltip left of trigger, arrow points right) */
+.tooltip__popup--left .tooltip__arrow {
+  right: -5px;
+  top: 50%;
+  margin-top: -5px;
+  border-bottom: none;
+  border-left: none;
+}
+
+/* Arrow: Right (tooltip right of trigger, arrow points left) */
+.tooltip__popup--right .tooltip__arrow {
+  left: -5px;
+  top: 50%;
+  margin-top: -5px;
+  border-top: none;
+  border-right: none;
+}
+
+/* ===== Content: Text ===== */
+.tooltip__text {
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.75;
+  color: var(--text-default);
+  margin: 0;
+}
+
+/* ===== Content: Bullet List ===== */
+.tooltip__bullets {
+  list-style: disc;
+  padding-left: 21px;
+  margin: 0;
+}
+
+.tooltip__bullets li {
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.75;
+  color: var(--text-default);
+}
+
+/* ===== Content: Icon List ===== */
+.tooltip__icon-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.tooltip__icon-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 8px;
+}
+
+.tooltip__check-icon {
+  flex-shrink: 0;
+}

@@ -18,18 +18,18 @@ export function LabelPage() {
       <ComponentPreview title="Label variants" direction="column" align="left">
         <Label>Default label</Label>
         <Label required>Required label</Label>
-        <Label helpIcon>Label with help</Label>
-        <Label required helpIcon>Required with help</Label>
+        <Label showHelpIcon>Label with help</Label>
+        <Label required showHelpIcon>Required with help</Label>
       </ComponentPreview>
       <CodeBlock code={`<Label>Default label</Label>
 <Label required>Required label</Label>
-<Label helpIcon>Label with help</Label>`} />
+<Label showHelpIcon>Label with help</Label>`} />
 
       <h2>Props</h2>
       <PropsTable props={[
-        { name: 'children', type: 'ReactNode', description: 'Label text', required: true },
+        { name: 'children', type: 'string', description: 'Label text', required: true },
         { name: 'required', type: 'boolean', default: 'false', description: 'Show required asterisk' },
-        { name: 'helpIcon', type: 'boolean', default: 'false', description: 'Show help icon' },
+        { name: 'showHelpIcon', type: 'boolean', default: 'false', description: 'Show help icon' },
         { name: 'htmlFor', type: 'string', description: 'Associated input ID' },
       ]} />
     </div>

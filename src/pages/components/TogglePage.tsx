@@ -1,12 +1,9 @@
-import { useState } from 'react'
 import { Toggle } from 'treasure-rapid-stylekit'
 import { ComponentPreview } from '../../components/docs/ComponentPreview'
 import { CodeBlock } from '../../components/docs/CodeBlock'
 import { PropsTable } from '../../components/docs/PropsTable'
 
 export function TogglePage() {
-  const [on, setOn] = useState(false)
-
   return (
     <div>
       <div className="page-header">
@@ -19,18 +16,18 @@ export function TogglePage() {
 
       <h2>Default</h2>
       <ComponentPreview title="Toggle states" direction="column" align="left">
-        <Toggle label="Notifications" checked={on} onChange={setOn} />
-        <Toggle label="Always on" checked={true} onChange={() => {}} />
+        <Toggle label="Notifications" />
+        <Toggle label="Always on" defaultChecked />
         <Toggle label="Disabled" disabled />
-        <Toggle label="Disabled (on)" checked={true} disabled onChange={() => {}} />
+        <Toggle label="Disabled (on)" defaultChecked disabled />
       </ComponentPreview>
-      <CodeBlock code={`<Toggle label="Notifications" checked={on} onChange={setOn} />`} />
+      <CodeBlock code={`<Toggle label="Notifications" checked={on} onChange={handleChange} />`} />
 
       <h2>Props</h2>
       <PropsTable props={[
         { name: 'label', type: 'string', description: 'Toggle label text' },
-        { name: 'checked', type: 'boolean', description: 'On/off state' },
-        { name: 'onChange', type: '(checked: boolean) => void', description: 'Change handler' },
+        { name: 'checked', type: 'boolean', description: 'Controlled on/off state' },
+        { name: 'onChange', type: 'ChangeEventHandler', description: 'Native change handler' },
         { name: 'disabled', type: 'boolean', default: 'false', description: 'Disable the toggle' },
       ]} />
     </div>

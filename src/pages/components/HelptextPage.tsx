@@ -10,24 +10,24 @@ export function HelptextPage() {
         <div className="page-header__subtitle">Form Controls</div>
         <h1 className="page-header__title">Helptext</h1>
         <p className="page-header__description">
-          Standalone help text component with success and error variants for form fields.
+          Standalone help text component with success and error types for form fields.
         </p>
       </div>
 
-      <h2>Variants</h2>
-      <ComponentPreview title="All variants" direction="column" align="left">
+      <h2>Types</h2>
+      <ComponentPreview title="All types" direction="column" align="left">
         <Helptext>Default help text</Helptext>
-        <Helptext variant="success">Success message</Helptext>
-        <Helptext variant="error">Error message</Helptext>
+        <Helptext type="success">Success message</Helptext>
+        <Helptext type="error">Error message</Helptext>
       </ComponentPreview>
       <CodeBlock code={`<Helptext>Default help text</Helptext>
-<Helptext variant="success">Success message</Helptext>
-<Helptext variant="error">Error message</Helptext>`} />
+<Helptext type="success">Success message</Helptext>
+<Helptext type="error">Error message</Helptext>`} />
 
       <h2>Props</h2>
       <PropsTable props={[
-        { name: 'children', type: 'ReactNode', description: 'Help text content', required: true },
-        { name: 'variant', type: "'default' | 'success' | 'error'", default: "'default'", description: 'Visual variant' },
+        { name: 'children', type: 'string', description: 'Help text content', required: true },
+        { name: 'type', type: "'default' | 'success' | 'error'", default: "'default'", description: 'Visual type' },
       ]} />
     </div>
   )

@@ -1,0 +1,142 @@
+/* ===== AppShell - Full-page app layout with icon sidebar + top nav + chat panel ===== */
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--surface-page-bg);
+}
+
+/* Main Wrapper - Contains top nav + content, has background gradient */
+.app-shell__main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  /* Left padding is 0 because the Sidebar already contributes its own 8px
+     margin-right, giving the desired 8px gap to the content card. */
+  padding: 8px 8px 8px 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Top Navigation - Horizontal tabs */
+.app-shell__top-nav {
+  display: flex;
+  gap: 16px;
+  background-color: transparent;
+  flex-shrink: 0;
+  margin-bottom: 16px;
+}
+
+/* Content Card - White card wrapper around chat + canvas */
+.app-shell__content-card {
+  flex: 1;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background-color: var(--surface-default);
+  border-radius: 16px;
+  box-shadow: var(--elevation-3);
+  overflow: hidden;
+  min-height: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.app-shell__top-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-primary);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.app-shell__top-nav-item:hover {
+  background-color: var(--surface-bg-hover);
+  color: var(--text-default);
+}
+
+.app-shell__top-nav-item--active {
+  color: var(--text-default);
+  font-weight: var(--font-weight-semibold);
+}
+
+.app-shell__top-nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.app-shell__top-nav-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.app-shell__top-nav-label {
+  line-height: 1.5;
+}
+
+/* Chat Panel - Collapsible left panel */
+.app-shell__chat-panel {
+  position: relative;
+  flex-shrink: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  padding: 0;
+}
+
+.app-shell__chat-panel--closed {
+  width: 48px !important;
+}
+
+.app-shell__chat-panel-toggle {
+  position: absolute;
+  top: 16px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-default);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.15s ease;
+}
+
+.app-shell__chat-panel-toggle:hover {
+  background-color: var(--surface-bg-hover);
+}
+
+.app-shell__chat-panel-toggle svg {
+  width: 16px;
+  height: 16px;
+  color: var(--icon-default);
+}
+
+/* Canvas - Main content area */
+.app-shell__canvas {
+  flex: 1;
+  overflow-y: auto;
+  background-color: var(--surface-page-bg);
+  border-radius: 16px;
+  padding: 0;
+}

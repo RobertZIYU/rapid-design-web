@@ -1,0 +1,63 @@
+/* ===== EmptyState - Centered empty state pattern ===== */
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 64px 32px;
+  min-height: 400px;
+  font-family: var(--font-primary);
+}
+
+/* Icon */
+.empty-state__icon {
+  font-size: 64px;
+  margin-bottom: 24px;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-state__icon > svg {
+  width: 64px;
+  height: 64px;
+}
+
+/* Allow embedded illustrations (PlaceholderGraphic) to keep their natural proportions. */
+.empty-state__icon > .placeholder-graphic {
+  width: 320px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Title */
+.empty-state__title {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.3;
+  color: var(--text-default);
+  margin: 0 0 12px 0;
+}
+
+/* Description */
+.empty-state__description {
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin: 0 0 32px 0;
+  max-width: 400px;
+}
+
+/* Action */
+.empty-state__action {
+  margin-bottom: 0;
+}
+
+/* Secondary action */
+.empty-state__secondary-action {
+  margin-top: 16px;
+}

@@ -33,13 +33,13 @@ export function ButtonPage() {
 
       <h2>Sizes</h2>
       <ComponentPreview title="Size variants">
+        <Button variant="primary" size="xs">Extra Small</Button>
         <Button variant="primary" size="sm">Small</Button>
         <Button variant="primary" size="md">Medium</Button>
-        <Button variant="primary" size="lg">Large</Button>
       </ComponentPreview>
-      <CodeBlock code={`<Button variant="primary" size="sm">Small</Button>
-<Button variant="primary" size="md">Medium</Button>
-<Button variant="primary" size="lg">Large</Button>`} />
+      <CodeBlock code={`<Button variant="primary" size="xs">Extra Small</Button>
+<Button variant="primary" size="sm">Small</Button>
+<Button variant="primary" size="md">Medium</Button>`} />
 
       <h2>With Icons</h2>
       <ComponentPreview title="Icon buttons">
@@ -63,7 +63,7 @@ export function ButtonPage() {
       <h2>Props</h2>
       <PropsTable props={[
         { name: 'variant', type: "'primary' | 'secondary' | 'outline' | 'ghost' | 'link' | 'destructive'", default: "'primary'", description: 'Visual style variant' },
-        { name: 'size', type: "'sm' | 'md' | 'lg'", default: "'md'", description: 'Button size' },
+        { name: 'size', type: "'xs' | 'sm' | 'md'", default: "'md'", description: 'Button size' },
         { name: 'icon', type: 'ReactNode', description: 'Icon before the label' },
         { name: 'endIcon', type: 'ReactNode', description: 'Icon after the label' },
         { name: 'iconOnly', type: 'boolean', default: 'false', description: 'Render icon-only button (requires aria-label)' },
